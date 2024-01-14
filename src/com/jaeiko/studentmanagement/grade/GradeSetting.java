@@ -1,5 +1,6 @@
 package com.jaeiko.studentmanagement.grade;
 
+// GradeSetting 클래스 : 입력된 학년의 숫자에 맞게 Grade 열거타입으로 바꿔주는 클래스
 public class GradeSetting {
 	public Grade setGradeByEnum(int grade) {
 		Grade g = null;	// 주석 6 : 참조 타입(열거 타입) - 열거 타입 객체화
@@ -22,6 +23,8 @@ public class GradeSetting {
 		case 6:	// 6학년
 			g = Grade.SIXTH_GRADE;
 			break;
+		default:	// 그 이외의 숫자를 입력했을 시 숫자 오류
+			g = Grade.NUM_ERROR;
 		}
 		return g;
 	}

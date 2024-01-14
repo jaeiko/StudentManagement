@@ -124,11 +124,12 @@ public class StudentManager extends DisplayManager{
         System.out.print("수정할 학생의 " + (programNum == 1 ? "ID" : "학번") + "을 입력하세요. : ");
         studentId = scan.nextInt();
 
+        // 수정하고자 하는 학생이 존재하는지 확인
         for (int i = 0; i < studentList.size(); i++) {
-            if (studentId == studentList.get(i).getStudentId()) {
-                editStudentDetails(programNum, studentList.get(i));	// 학생 정보 수정 메소드 호출
+            if (studentId == studentList.get(i).getStudentId()) {	// 존재하면 editStudentDetails() 메소드 호출
+                editStudentDetails(programNum, studentList.get(i));
                 return;
-            } else {
+            } else {	// 존재하지 않으면 에러 출력
                 displayNotFoundError();
             }
         }
