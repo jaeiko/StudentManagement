@@ -7,6 +7,7 @@ import java.util.Scanner;
 import com.jaeiko.studentmanagement.main.ProgramRunner;
 import com.jaeiko.studentmanagement.main.StudentData;
 
+// SchooolProgram 클래스 : 학교용 학생 관리 프로그램
 public class SchoolProgram extends DisplayManager implements ProgramRunner {	// 주석 3 : 인터페이스 - ProgramRunner 인터페이스 구현 클래스인 SchoolProgram 선언
 	Scanner scan = new Scanner(System.in);
 
@@ -24,7 +25,7 @@ public class SchoolProgram extends DisplayManager implements ProgramRunner {	// 
         System.out.println("Running School Program...");
         // 학교용 프로그램 실행
 		while(true) {
-			displayManager.displayMenu();
+			displayManager.displayMenu(programNum);
 			System.out.print("실행할 메뉴 번호를 입력하세요 : ");
 			key = scan.next();
 			System.out.println();

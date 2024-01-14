@@ -17,6 +17,7 @@ import java.util.Scanner;
 import com.jaeiko.studentmanagement.program.AcademyProgram;
 import com.jaeiko.studentmanagement.program.SchoolProgram;
 
+// Main 클래스 : main 함수 포함 처음 실행 시 학원용, 학교용 선택해서 해당 용도에 맞게 실행해주는 클래스
 public class Main {
 
 	public static void main(String[] args)  {
