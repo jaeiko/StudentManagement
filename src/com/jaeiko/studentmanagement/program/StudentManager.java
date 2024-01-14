@@ -195,7 +195,7 @@ public class StudentManager extends DisplayManager{
         System.out.println("해당 학생이 없습니다. 다시 시도해주세요.");
     }
     @Override
-    public void displayInvalidOption() {
+	public void displayInvalidOption() {
         System.out.println("유효하지 않은 옵션입니다. 다시 시도해주세요.");
     }
 }
